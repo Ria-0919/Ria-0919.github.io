@@ -11,10 +11,8 @@ function openBook() {
 }
 
 function showSection(section) {
-    // 모든 섹션 숨기기
     const sections = document.querySelectorAll('.content > section');
-    sections.forEach(s => s.classList.add('hidden'));
+    sections.forEach(s => s.classList.add('hidden')); // 모든 섹션 숨기기
 
-    // 클릭한 섹션 보여주기
-    document.getElementById(section).classList.remove('hidden');
+    document.getElementById(section).classList.remove('hidden'); // 클릭한 섹션 보여주기
 }
