@@ -3,61 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Game Concept Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="nav-link" data-section="home">HOME</a></li>
-                <li><a href="#" class="nav-link" data-section="about">ABOUT ME</a></li>
-                <li><a href="#" class="nav-link" data-section="skills">SKILLS</a></li>
-                <li><a href="#" class="nav-link" data-section="portfolio">PORTFOLIO</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>안녕하세요! 제 포트폴리오에 오신 것을 환영합니다. 제 프로젝트와 기술에 대해 알아보세요.</p>
-    </section>
-
-    <section id="about" class="content hidden">
-        <h1>About Me</h1>
-        <p>저는 웹 개발자이자 디자인에 열정을 가진 사람입니다. 새로운 기술을 배우고 문제를 해결하는 것을 좋아합니다.</p>
-        <img src="https://via.placeholder.com/300" alt="About Me" />
-    </section>
-
-    <section id="skills" class="content hidden">
-        <h1>My Skills</h1>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="content hidden">
-        <h1>Portfolio Projects</h1>
-        <div class="project">
-            <h2>프로젝트 1</h2>
-            <img src="https://via.placeholder.com/300" alt="Project 1" />
-            <p>이 프로젝트는 웹 애플리케이션의 기능을 보여줍니다.</p>
+    <div class="book-container">
+        <div class="character">
+            <img src="https://via.placeholder.com/150" alt="Character holding a book" />
         </div>
-        <div class="project">
-            <h2>프로젝트 2</h2>
-            <img src="https://via.placeholder.com/300" alt="Project 2" />
-            <p>이 프로젝트는 사용자 경험을 향상시키기 위한 것입니다.</p>
+        <div class="book" id="book" onclick="openBook()">
+            <img src="https://via.placeholder.com/200" alt="Book" />
         </div>
-        <div class="project">
-            <h2>프로젝트 3</h2>
-            <img src="https://via.placeholder.com/300" alt="Project 3" />
-            <p>이 프로젝트는 혁신적인 디자인을 포함하고 있습니다.</p>
+        <div class="portfolio-content hidden">
+            <section id="projects">
+                <h2>Project Codex</h2>
+                <div class="project">
+                    <h3>Project 1: Adventure Quest</h3>
+                    <p>이 프로젝트는...</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Fantasy World</h3>
+                    <p>이 프로젝트는...</p>
+                </div>
+                <!-- 추가 프로젝트 -->
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li class="skill">HTML5 - Master</li>
+                    <li class="skill">CSS3 - Expert</li>
+                    <li class="skill">JavaScript - Intermediate</li>
+                    <!-- 추가 기술 -->
+                </ul>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
 </html>
+
