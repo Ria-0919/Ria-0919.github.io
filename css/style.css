@@ -1,9 +1,45 @@
-/* 기존 스타일 코드 ... */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
 
-.content {
+.book-container {
+    position: relative;
+    margin: auto;
+}
+
+.character {
+    margin-bottom: 20px;
+}
+
+.book {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.portfolio-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
     margin-top: 20px;
 }
 
 .hidden {
     display: none;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.book.open {
+    animation: open 1s forwards;
+}
+
+@keyframes open {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
