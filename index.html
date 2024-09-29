@@ -16,27 +16,35 @@
             <img src="https://via.placeholder.com/200" alt="Book" />
         </div>
         <div class="portfolio-content hidden">
-            <section id="projects">
-                <h2>Project Codex</h2>
-                <div class="project">
-                    <h3>Project 1: Adventure Quest</h3>
-                    <p>이 프로젝트는...</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2: Fantasy World</h3>
-                    <p>이 프로젝트는...</p>
-                </div>
-                <!-- 추가 프로젝트 -->
+            <h2>Chapters</h2>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">Projects</button>
+
+            <section id="about" class="content hidden">
+                <h3>About Me</h3>
+                <p>나에 대한 소개...</p>
             </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li class="skill">HTML5 - Master</li>
-                    <li class="skill">CSS3 - Expert</li>
-                    <li class="skill">JavaScript - Intermediate</li>
-                    <!-- 추가 기술 -->
+            <section id="skills" class="content hidden">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5 - Master</li>
+                    <li>CSS3 - Expert</li>
+                    <li>JavaScript - Intermediate</li>
                 </ul>
+            </section>
+
+            <section id="projects" class="content hidden">
+                <h3>Projects</h3>
+                <div class="project">
+                    <h4>Project 1: Adventure Quest</h4>
+                    <p>이 프로젝트는...</p>
+                </div>
+                <div class="project">
+                    <h4>Project 2: Fantasy World</h4>
+                    <p>이 프로젝트는...</p>
+                </div>
             </section>
         </div>
     </div>
