@@ -2,59 +2,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
     background: #333;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
-    text-align: center;
-}
-
-nav {
-    margin: 10px 0;
 }
 
 nav button {
-    margin: 0 10px;
-    padding: 10px 15px;
-    cursor: pointer;
-    background: #444;
-    color: #fff;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
     border: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    cursor: pointer;
 }
 
 nav button:hover {
-    background: #555;
-}
-
-main {
-    padding: 20px;
+    background-color: #777;
 }
 
 .content {
-    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
 }
 
-.content.visible {
-    display: block;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project-images {
-    display: flex;
-    flex-wrap: wrap;
+.hidden {
+    display: none; /* 숨기기 */
 }
 
 .project-images img {
-    margin: 5px;
     width: 150px;
-    height: 150px;
-    object-fit: cover;
+    margin: 5px;
 }
