@@ -8,44 +8,47 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="book-container">
-        <div class="character">
-            <img src="https://via.placeholder.com/150" alt="Character holding a book" />
-        </div>
-        <div class="book" id="book" onclick="openBook()">
-            <img src="https://via.placeholder.com/200" alt="Book" />
-        </div>
-        <div class="portfolio-content hidden">
+    <div class="container">
+        <div class="sidebar">
             <h2>Chapters</h2>
             <button onclick="showSection('about')">About Me</button>
             <button onclick="showSection('skills')">Skills</button>
             <button onclick="showSection('projects')">Projects</button>
+        </div>
+        <div class="book-container">
+            <div class="character">
+                <img src="https://via.placeholder.com/150" alt="Character holding a book" />
+            </div>
+            <div class="book" id="book" onclick="openBook()">
+                <img src="https://via.placeholder.com/200" alt="Book" />
+            </div>
+            <div class="portfolio-content hidden">
+                <section id="about" class="content hidden">
+                    <h3>About Me</h3>
+                    <p>나에 대한 소개...</p>
+                </section>
 
-            <section id="about" class="content hidden">
-                <h3>About Me</h3>
-                <p>나에 대한 소개...</p>
-            </section>
+                <section id="skills" class="content hidden">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML5 - Master</li>
+                        <li>CSS3 - Expert</li>
+                        <li>JavaScript - Intermediate</li>
+                    </ul>
+                </section>
 
-            <section id="skills" class="content hidden">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML5 - Master</li>
-                    <li>CSS3 - Expert</li>
-                    <li>JavaScript - Intermediate</li>
-                </ul>
-            </section>
-
-            <section id="projects" class="content hidden">
-                <h3>Projects</h3>
-                <div class="project">
-                    <h4>Project 1: Adventure Quest</h4>
-                    <p>이 프로젝트는...</p>
-                </div>
-                <div class="project">
-                    <h4>Project 2: Fantasy World</h4>
-                    <p>이 프로젝트는...</p>
-                </div>
-            </section>
+                <section id="projects" class="content hidden">
+                    <h3>Projects</h3>
+                    <div class="project">
+                        <h4>Project 1: Adventure Quest</h4>
+                        <p>이 프로젝트는...</p>
+                    </div>
+                    <div class="project">
+                        <h4>Project 2: Fantasy World</h4>
+                        <p>이 프로젝트는...</p>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </body>
