@@ -30,16 +30,3 @@ body {
 .hidden {
     display: none;
 }
-
-.content {
-    margin-top: 20px;
-}
-
-.book.open {
-    animation: open 1s forwards;
-}
-
-@keyframes open {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
