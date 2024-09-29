@@ -4,11 +4,24 @@ body {
     background-size: cover;
     color: #ffffff;
     text-align: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .book-container {
     position: relative;
     margin: auto;
+    flex-grow: 1;
 }
 
 .character {
