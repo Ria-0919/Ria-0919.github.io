@@ -43,6 +43,20 @@ main {
     display: block;
 }
 
+.project {
+    margin-bottom: 20px;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-images img {
+    margin: 5px;
+    width: 100px; /* 이미지 크기 조정 */
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
