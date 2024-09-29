@@ -3,8 +3,9 @@ body {
     background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
-    text-align: center;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 
 .book-container {
     position: relative;
-    margin: auto;
+    margin-left: 20px;
     flex-grow: 1;
 }
 
