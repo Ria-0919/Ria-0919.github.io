@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Concept Portfolio</title>
+    <title>My Game Concept Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>Chapters</h2>
+    <header>
+        <h1>My Game Concept Portfolio</h1>
+        <nav>
             <button onclick="showSection('about')">About Me</button>
             <button onclick="showSection('skills')">Skills</button>
             <button onclick="showSection('projects')">Projects</button>
-        </div>
-        <div class="book-container">
-            <div class="character">
-                <img src="https://via.placeholder.com/150" alt="Character holding a book" />
-            </div>
-            <div class="book" id="book" onclick="openBook()">
-                <img src="https://via.placeholder.com/200" alt="Book" />
-            </div>
-            <div class="portfolio-content hidden">
-                <section id="about" class="content hidden">
-                    <h3>About Me</h3>
-                    <p>나에 대한 소개...</p>
-                </section>
+        </nav>
+    </header>
 
-                <section id="skills" class="content hidden">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>HTML5 - Master</li>
-                        <li>CSS3 - Expert</li>
-                        <li>JavaScript - Intermediate</li>
-                    </ul>
-                </section>
+    <main>
+        <section id="about" class="content hidden">
+            <h2>About Me</h2>
+            <p>안녕하세요! 저는 게임 개발에 열정을 가진 개발자입니다.</p>
+        </section>
 
-                <section id="projects" class="content hidden">
-                    <h3>Projects</h3>
-                    <div class="project">
-                        <h4>Project 1: Adventure Quest</h4>
-                        <p>이 프로젝트는...</p>
-                    </div>
-                    <div class="project">
-                        <h4>Project 2: Fantasy World</h4>
-                        <p>이 프로젝트는...</p>
-                    </div>
-                </section>
+        <section id="skills" class="content hidden">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 - Master</li>
+                <li>CSS3 - Expert</li>
+                <li>JavaScript - Intermediate</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="content hidden">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Adventure Quest</h3>
+                <p>이 프로젝트는... </p>
             </div>
-        </div>
-    </div>
+            <div class="project">
+                <h3>Project 2: Fantasy World</h3>
+                <p>이 프로젝트는... </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Game Concept Portfolio</p>
+    </footer>
 </body>
 </html>
