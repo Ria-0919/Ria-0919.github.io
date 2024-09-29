@@ -1,39 +1,63 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
     background: #333;
-    color: white;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav button {
-    margin-right: 15px;
-    padding: 10px;
-    background-color: #555;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: #555;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 nav button:hover {
-    background-color: #777;
+    background: #777;
+}
+
+main {
+    padding: 20px;
 }
 
 .content {
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 20px;
+    display: none; /* 기본적으로 모든 콘텐츠를 숨김 */
 }
 
-.hidden {
-    display: none; /* 숨기기 */
+.content.visible {
+    display: block; /* 클릭 시 보이게 함 */
+}
+
+.project {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-images img {
-    width: 150px;
     margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
 }
