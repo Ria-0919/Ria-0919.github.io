@@ -1,49 +1,9 @@
-/* 기존 스타일 코드 */
+/* 기존 스타일 코드 ... */
 
-/* 글꼴 및 배경 설정 */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
-    text-align: center;
-}
-
-/* 캐릭터 및 책 컨테이너 스타일 */
-.book-container {
-    position: relative;
-    margin: auto;
-}
-
-.character {
-    margin-bottom: 20px;
-}
-
-/* 책 클릭 스타일 */
-.book {
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-/* 포트폴리오 콘텐츠 스타일 */
-.portfolio-content {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 15px;
+.content {
     margin-top: 20px;
 }
 
-/* 숨김 클래스 */
 .hidden {
     display: none;
-}
-
-/* 애니메이션 스타일 추가 */
-.book.open {
-    animation: open 1s forwards;
-}
-
-@keyframes open {
-    transform: scale(1.1);
-    opacity: 0.8;
 }
