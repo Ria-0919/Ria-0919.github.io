@@ -1,27 +1,18 @@
 window.onscroll = function() {
-    var header = document.getElementById("header");
+    var header = document.getElementById("sticky-header");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        header.style.display = "block";
+        header.classList.remove("hidden");
     } else {
-        header.style.display = "none";
+        header.classList.add("hidden");
     }
 };
 
-function showProject(projectId) {
-    var projects = document.getElementsByClassName("project-details");
-    for (var i = 0; i < projects.length; i++) {
-        projects[i].style.display = "none";
-    }
-    document.getElementById(projectId).style.display = "block";
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
 
-function showOverlay(overlayId) {
-    var overlay = document.getElementById("overlay");
-    overlay.style.display = "flex";
-    // You can add more logic to display specific content based on overlayId
-}
-
-function closeOverlay() {
-    var overlay = document.getElementById("overlay");
-    overlay.style.display = "none";
-}
+function toggleProject(projectId) {
+    var project = document.getElementById(projectId);
+    if (project.classList.contains("hidden")) {
+        project.classList.remove("hidden");
+    } else
