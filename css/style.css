@@ -27,8 +27,6 @@ nav button {
 
 main {
     margin-top: 100px;
-    background-image: url('path/to/your/book_image.jpg'); /* 배경 이미지 경로 */
-    background-size: cover;
     padding: 50px 20px;
 }
 
@@ -40,14 +38,6 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project, .overlay {
-    display: none; /* 처음에는 숨김 */
-}
-
-.project.active, .overlay.active {
-    display: block; /* 활성화된 경우에만 표시 */
-}
-
 .overlay {
     position: fixed;
     top: 0;
@@ -57,12 +47,16 @@ section {
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
-    overflow-y: scroll; /* 스크롤 가능 */
+    overflow-y: auto;
     z-index: 20;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.overlay.active {
+    display: flex;
 }
 
 .close {
