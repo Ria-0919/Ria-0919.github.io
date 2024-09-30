@@ -1,16 +1,15 @@
 window.addEventListener('scroll', () => {
-  const header = document.getElementById('header');
   if (window.scrollY > 100) {
-    header.style.display = 'flex';
+    document.body.classList.add('scrolled');
   } else {
-    header.style.display = 'none';
+    document.body.classList.remove('scrolled');
   }
 });
 
-const chapterButtons = document.querySelectorAll('.chapter-button');
-chapterButtons.forEach(button => {
+const navButtons = document.querySelectorAll('.nav-btn');
+navButtons.forEach(button => {
   button.addEventListener('click', (e) => {
-    const target = document.querySelector(e.target.dataset.target);
-    target.scrollIntoView({ behavior: 'smooth' });
+    const targetId = e.target.getAttribute('data-target');
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
   });
 });
