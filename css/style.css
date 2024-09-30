@@ -1,18 +1,21 @@
+/* 기본 스타일 */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
+/* 스크롤 네비게이션 */
 #scroll-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 10px;
+  display: none;
 }
 
 #scroll-nav nav {
@@ -29,6 +32,7 @@ body {
   cursor: pointer;
 }
 
+/* 큰 배경 이미지 섹션 */
 #hero {
   height: 100vh;
   background-image: url('your-background-image.jpg');
@@ -36,11 +40,15 @@ body {
   background-position: center;
 }
 
+/* 챕터 스타일 */
 .chapter {
   padding: 100px 20px;
   text-align: center;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
+/* 프로필 섹션 */
 .profile-container {
   display: flex;
   justify-content: center;
@@ -52,6 +60,7 @@ body {
   text-align: left;
 }
 
+/* 프로젝트 버튼 */
 .project-container {
   display: flex;
   justify-content: center;
