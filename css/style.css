@@ -45,7 +45,6 @@ section {
 
 .project.active, .overlay.active {
     display: block; /* 활성화된 경우에만 표시 */
-
 }
 
 .overlay {
