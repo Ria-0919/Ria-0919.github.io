@@ -35,7 +35,7 @@ body {
 /* 큰 배경 이미지 섹션 */
 #hero {
   height: 100vh;
-  background-image: url('your-background-image.jpg');
+  background-image: url('https://via.placeholder.com/1920x1080');
   background-size: cover;
   background-position: center;
 }
