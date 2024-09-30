@@ -1,116 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: none;
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  padding: 10px;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+#chapter-nav {
+  display: flex;
+  gap: 15px;
 }
 
-header nav button {
-    background: none;
-    border: none;
-    margin: 0 15px;
-    font-size: 16px;
-    cursor: pointer;
+.chapter-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
 }
 
-#hero {
-    height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+#background-image {
+  height: 100vh;
+  background-image: url('path-to-your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
+#profile, #game-design, #2d-design, #3d-design {
+  padding: 100px 20px;
 }
 
-.chapter {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-    padding: 60px 20px;
-    text-align: center;
+.profile-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left {
-    flex: 1;
-    text-align: right;
-    padding-right: 20px;
-}
-
-.right {
-    flex: 2;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.chapter-buttons {
-    margin-top: 20px;
-}
-
-.chapter-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+.profile-text {
+  max-width: 600px;
 }
 
 .project-buttons {
-    margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
-.project-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+#project-content {
+  margin-top: 20px;
 }
 
-.project {
-    display: none;
-    margin-top: 20px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-description {
-    margin-left: 20px;
-    text-align: left;
-}
-
-.project-details {
-    margin-top: 20px;
-    text-align: left;
-}
-
-.hidden {
-    display: none;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+/* Add more styles as needed */
