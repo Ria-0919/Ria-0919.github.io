@@ -1,3 +1,4 @@
+// 챕터 전환 함수
 function showSection(section) {
     const sections = document.querySelectorAll('section');
     sections.forEach(s => {
@@ -6,6 +7,7 @@ function showSection(section) {
     document.getElementById(section).style.display = 'block';
 }
 
+// 프로젝트 전환 함수
 function showSubSection(project) {
     const projects = document.querySelectorAll('.project');
     projects.forEach(p => {
@@ -14,6 +16,7 @@ function showSubSection(project) {
     document.getElementById(project).classList.add('active');
 }
 
+// 오버레이 열기 함수
 function openOverlay(project) {
     const overlay = document.getElementById('overlay');
     const overlayContent = document.getElementById('overlayContent');
@@ -21,11 +24,13 @@ function openOverlay(project) {
     overlay.classList.add('active');
 }
 
+// 오버레이 닫기 함수
 function closeOverlay() {
     const overlay = document.getElementById('overlay');
     overlay.classList.remove('active');
 }
 
+// 프로젝트 상세 정보 함수
 function getProjectDetails(project) {
     switch (project) {
         case 'gameDeception':
@@ -41,4 +46,12 @@ function getProjectDetails(project) {
         case 'conceptArt':
             return `<h3>Concept Art</h3><p>게임을 위한 개념 미술 프로젝트입니다.</p><p>자세한 설명 내용이 여기에 들어갑니다.</p>`;
         case 'characterModeling':
-            return `<h3>3D Character Modeling</h3><p>게임 캐릭터 모델링 작업입니다.</
+            return `<h3>3D Character Modeling</h3><p>게임 캐릭터 모델링 작업입니다.</p><p>자세한 설명 내용이 여기에 들어갑니다.</p>`;
+        case 'environmentModeling':
+            return `<h3>Game Environment Modeling</h3><p>게임 환경 모델링 프로젝트입니다.</p><p>자세한 설명 내용이 여기에 들어갑니다.</p>`;
+        case 'propsDesign':
+            return `<h3>3D Props Design</h3><p>게임 소품 디자인 프로젝트입니다.</p><p>자세한 설명 내용이 여기에 들어갑니다.</p>`;
+        default:
+            return `<h3>Unknown Project</h3><p>상세 정보를 찾을 수 없습니다.</p>`;
+    }
+}
