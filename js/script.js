@@ -1,33 +1,27 @@
-document.addEventListener('scroll', function() {
-    const header = document.getElementById('sticky-header');
-    if (window.scrollY > 50) {
-        header.classList.remove('hidden');
+window.onscroll = function() {
+    var header = document.getElementById("header");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        header.style.display = "block";
     } else {
-        header.classList.add('hidden');
+        header.style.display = "none";
     }
-});
+};
 
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
+function showProject(projectId) {
+    var projects = document.getElementsByClassName("project-details");
+    for (var i = 0; i < projects.length; i++) {
+        projects[i].style.display = "none";
+    }
+    document.getElementById(projectId).style.display = "block";
 }
 
-function toggleProject(projectId) {
-    const project = document.getElementById(projectId);
-    const allProjects = document.querySelectorAll('.project');
-
-    // 다른 프로젝트 숨기기
-    allProjects.forEach((proj) => {
-        if (proj !== project) {
-            proj.classList.add('hidden');
-        }
-    });
-
-    // 선택한 프로젝트 토글
-    project.classList.toggle('hidden');
+function showOverlay(overlayId) {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "flex";
+    // You can add more logic to display specific content based on overlayId
 }
 
-function showMore(detailId) {
-    const details = document.getElementById(detailId);
-    details.classList.toggle('hidden');
+function closeOverlay() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
 }
