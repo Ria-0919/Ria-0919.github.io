@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Game Concept Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -21,42 +21,43 @@
         <section id="profile">
             <h2>Profile</h2>
             <p>안녕하세요! 저는 게임 개발에 열정을 가진 개발자입니다.</p>
-            <button onclick="showSubSection('gameDesignProjects')">챕터 보기</button>
+            <button onclick="showSubSection('gameProjects')">챕터 보기</button>
         </section>
 
-        <section id="gameDesign" class="project">
+        <section id="gameDesign">
             <h2>Game Design Projects</h2>
-            <div id="projectDeception" class="project">
-                <h3>Project Deception</h3>
-                <p>실시간 추리 마피아 게임입니다.</p>
-                <button onclick="openOverlay('gameDeception')">더 알아보기</button>
+            <div id="gameProjects">
+                <div>
+                    <h3>Project Deception</h3>
+                    <p>실시간 추리 마피아 게임입니다.</p>
+                    <button onclick="openOverlay('gameDeception')">더 알아보기</button>
+                </div>
             </div>
-            <!-- 다른 프로젝트들도 같은 형식으로 추가 -->
         </section>
 
-        <section id="2DArt" class="project">
+        <section id="2DArt">
             <h2>2D Art Projects</h2>
-            <div id="gameCharacter" class="project">
+            <div>
                 <h3>Game Character Design</h3>
                 <p>캐릭터 디자인 프로젝트입니다.</p>
                 <button onclick="openOverlay('gameCharacter')">더 알아보기</button>
             </div>
         </section>
 
-        <section id="3DArt" class="project">
+        <section id="3DArt">
             <h2>3D Art Projects</h2>
-            <div id="characterModeling" class="project">
+            <div>
                 <h3>3D Character Modeling</h3>
                 <p>게임 캐릭터 모델링 작업입니다.</p>
                 <button onclick="openOverlay('characterModeling')">더 알아보기</button>
             </div>
         </section>
-
-        <div id="overlay" class="overlay">
-            <span class="close" onclick="closeOverlay()">닫기</span>
-            <div id="overlayContent"></div>
-        </div>
     </main>
+
+    <div id="overlay" class="overlay" onclick="closeOverlay()">
+        <div id="overlayContent" onclick="event.stopPropagation();"></div>
+        <button class="close" onclick="closeOverlay()">닫기</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
