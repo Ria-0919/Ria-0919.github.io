@@ -1,129 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Concept Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- 헤더와 스크롤 시 나타나는 버튼 -->
+  <header id="header">
+    <nav id="chapter-nav">
+      <button class="chapter-button" data-target="#profile">프로필</button>
+      <button class="chapter-button" data-target="#game-design">게임 기획</button>
+      <button class="chapter-button" data-target="#2d-design">2D 디자인</button>
+      <button class="chapter-button" data-target="#3d-design">3D 디자인</button>
+    </nav>
+  </header>
 
-    <!-- 상단 고정 내비게이션 -->
-    <header id="sticky-header" class="hidden">
-        <nav>
-            <button onclick="scrollToSection('profile')">Profile</button>
-            <button onclick="scrollToSection('gameDesign')">Game Design</button>
-            <button onclick="scrollToSection('2d')">2D Art</button>
-            <button onclick="scrollToSection('3d')">3D Art</button>
-        </nav>
-    </header>
+  <!-- 배경 이미지 섹션 -->
+  <section id="background-image">
+    <img src="path-to-your-image.jpg" alt="Background Image">
+  </section>
 
-    <!-- 큰 배경 이미지 -->
-    <section id="hero">
-        <img src="https://via.placeholder.com/1920x1080" alt="Hero Image">
-    </section>
+  <!-- 프로필 챕터 -->
+  <section id="profile">
+    <div class="profile-content">
+      <img src="path-to-your-profile-picture.jpg" alt="Profile Picture">
+      <div class="profile-text">
+        <h2>이름: 홍길동</h2>
+        <p>학력: 서울대학교 컴퓨터공학과 졸업</p>
+        <p>경력: 게임 개발 5년</p>
+        <!-- 다른 챕터로 이동하는 버튼 -->
+        <div class="chapter-navigation">
+          <button class="chapter-button" data-target="#game-design">게임 기획</button>
+          <button class="chapter-button" data-target="#2d-design">2D 디자인</button>
+          <button class="chapter-button" data-target="#3d-design">3D 디자인</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 프로필 섹션 -->
-    <section id="profile" class="chapter">
-        <div class="container">
-            <div class="left">
-                <img src="https://via.placeholder.com/150" alt="Profile Picture">
-            </div>
-            <div class="right">
-                <h2>About Me</h2>
-                <p>이름: 홍길동</p>
-                <p>학력: OO 대학교 게임 디자인 학과</p>
-                <p>경력: 게임 개발 경력 5년</p>
-                <div class="chapter-buttons">
-                    <button onclick="scrollToSection('gameDesign')">Game Design</button>
-                    <button onclick="scrollToSection('2d')">2D Art</button>
-                    <button onclick="scrollToSection('3d')">3D Art</button>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- 게임 기획 챕터 -->
+  <section id="game-design">
+    <h2>Game Design Projects</h2>
+    <div class="project-buttons">
+      <button class="project-button" data-target="#project-deception">Project Deception</button>
+      <button class="project-button" data-target="#defense-game">Defense Game</button>
+    </div>
+    <div id="project-content">
+      <!-- 여기에서 프로젝트별로 내용을 채워주세요 -->
+    </div>
+  </section>
 
-    <!-- 게임 기획 섹션 -->
-    <section id="gameDesign" class="chapter">
-        <h2>Game Design Projects</h2>
-        <div class="project-buttons">
-            <button onclick="toggleProject('project1')">Adventure of Legends</button>
-            <button onclick="toggleProject('project2')">Battle Arena</button>
-        </div>
-        <div id="project1" class="project hidden">
-            <div class="project-container">
-                <img src="https://via.placeholder.com/300" alt="Adventure of Legends Image">
-                <div class="project-description">
-                    <h3>Adventure of Legends</h3>
-                    <p>플레이어가 신비한 세계를 탐험하는 RPG입니다.</p>
-                    <button onclick="showMore('project1-details')">더 알아보기</button>
-                </div>
-            </div>
-            <div id="project1-details" class="project-details hidden">
-                <p>Adventure of Legends는 다양한 도전 과제와 퀘스트로 가득한 신비한 세계를 탐험하는 게임입니다...</p>
-            </div>
-        </div>
-        <div id="project2" class="project hidden">
-            <div class="project-container">
-                <img src="https://via.placeholder.com/300" alt="Battle Arena Image">
-                <div class="project-description">
-                    <h3>Battle Arena</h3>
-                    <p>플레이어가 서로 대결하는 PvP 게임입니다.</p>
-                    <button onclick="showMore('project2-details')">더 알아보기</button>
-                </div>
-            </div>
-            <div id="project2-details" class="project-details hidden">
-                <p>Battle Arena는 전략적인 PvP 전투 게임으로, 플레이어는 상대와 경쟁하면서 스킬을 연마합니다...</p>
-            </div>
-        </div>
-    </section>
+  <!-- 2D 챕터 -->
+  <section id="2d-design">
+    <h2>Game Character Design</h2>
+    <div class="project-buttons">
+      <button class="project-button" data-target="#character-design-1">Character Design 1</button>
+      <button class="project-button" data-target="#character-design-2">Character Design 2</button>
+      <button class="project-button" data-target="#character-design-3">Character Design 3</button>
+    </div>
+  </section>
 
-    <!-- 2D 아트 섹션 -->
-    <section id="2d" class="chapter">
-        <h2>2D Art Projects</h2>
-        <div class="project-buttons">
-            <button onclick="toggleProject('project3')">Fantasy Landscapes</button>
-        </div>
-        <div id="project3" class="project hidden">
-            <div class="project-container">
-                <img src="https://via.placeholder.com/300" alt="Fantasy Landscapes Image">
-                <div class="project-description">
-                    <h3>Fantasy Landscapes</h3>
-                    <p>다양한 판타지 배경을 그린 프로젝트입니다.</p>
-                    <button onclick="showMore('project3-details')">더 알아보기</button>
-                </div>
-            </div>
-            <div id="project3-details" class="project-details hidden">
-                <p>Fantasy Landscapes는 판타지 세계의 배경을 그린 아트 프로젝트로, 자연과 몽환적인 분위기를 표현합니다...</p>
-            </div>
-        </div>
-    </section>
+  <!-- 3D 챕터 -->
+  <section id="3d-design">
+    <h2>3D Character Modeling & Environment</h2>
+    <div class="project-buttons">
+      <button class="project-button" data-target="#3d-modeling-1">3D Character Modeling</button>
+      <button class="project-button" data-target="#3d-environment">Game Environment Modeling</button>
+    </div>
+  </section>
 
-    <!-- 3D 아트 섹션 -->
-    <section id="3d" class="chapter">
-        <h2>3D Art Projects</h2>
-        <div class="project-buttons">
-            <button onclick="toggleProject('project4')">3D Character Models</button>
-        </div>
-        <div id="project4" class="project hidden">
-            <div class="project-container">
-                <img src="https://via.placeholder.com/300" alt="3D Character Models Image">
-                <div class="project-description">
-                    <h3>3D Character Models</h3>
-                    <p>게임 캐릭터 모델링 작업입니다.</p>
-                    <button onclick="showMore('project4-details')">더 알아보기</button>
-                </div>
-            </div>
-            <div id="project4-details" class="project-details hidden">
-                <p>3D Character Models는 다양한 게임 캐릭터를 3D로 모델링한 프로젝트입니다...</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 My Game Concept Portfolio</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
