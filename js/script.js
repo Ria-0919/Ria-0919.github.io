@@ -28,24 +28,24 @@ window.addEventListener('scroll', function() {
 
 
 
-// 프로젝트 전환
+// 프로젝트 토글
 
-function showProject(projectId) {
+function toggleProject(projectId) {
 
-    const projects = document.querySelectorAll('.project');
+    const project = document.getElementById(projectId);
 
-    projects.forEach(project => project.classList.add('hidden'));
-
-    document.getElementById(projectId).classList.remove('hidden');
+    project.classList.toggle('hidden');
 
 }
 
 
 
-// 프로젝트 상세 페이지 열기 (새 창)
+// 더 알아보기 상세 내용 표시
 
-function openProjectDetails() {
+function showMore(detailsId) {
 
-    window.open('project-details.html', '_blank');
+    const details = document.getElementById(detailsId);
+
+    details.classList.toggle('hidden');
 
 }
