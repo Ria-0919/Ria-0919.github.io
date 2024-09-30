@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>내 포트폴리오</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="header">
         <nav id="navbar">
             <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#game-design">Game Design Projects</a></li>
-                <li><a href="#2d">2D Projects</a></li>
-                <li><a href="#3d">3D Projects</a></li>
+                <li><a href="#profile">프로필</a></li>
+                <li><a href="#game-design">게임 디자인 프로젝트</a></li>
+                <li><a href="#2d">2D 프로젝트</a></li>
+                <li><a href="#3d">3D 프로젝트</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <img src="background.jpg" alt="Background Image">
+        <img src="background.jpg" alt="배경 이미지">
     </section>
 
     <section id="profile">
         <div class="chapter">
-            <img src="profile.jpg" alt="Profile Picture">
+            <img src="profile.jpg" alt="프로필 사진">
             <div class="description">
-                <h2>Your Name</h2>
-                <p>Education, etc.</p>
+                <h2>이름</h2>
+                <p>학력 등</p>
             </div>
         </div>
         <nav class="chapter-nav">
             <ul>
-                <li><a href="#game-design">Game Design Projects</a></li>
-                <li><a href="#2d">2D Projects</a></li>
-                <li><a href="#3d">3D Projects</a></li>
+                <li><a href="#game-design">게임 디자인 프로젝트</a></li>
+                <li><a href="#2d">2D 프로젝트</a></li>
+                <li><a href="#3d">3D 프로젝트</a></li>
             </ul>
         </nav>
     </section>
 
     <section id="game-design">
-        <h2>Game Design Projects</h2>
+        <h2>게임 디자인 프로젝트</h2>
         <div class="project">
             <button onclick="showProject('project1')">Project Deception</button>
             <button onclick="showProject('project2')">Defense Game</button>
             <div id="project1" class="project-details">
-                <img src="project1.jpg" alt="Project 1">
+                <img src="project1.jpg" alt="프로젝트 1">
                 <h3>Project Deception</h3>
                 <p>실시간 추리 마피아게임</p>
                 <button onclick="showOverlay('overlay1')">더 알아보기</button>
             </div>
             <div id="project2" class="project-details">
-                <img src="project2.jpg" alt="Project 2">
+                <img src="project2.jpg" alt="프로젝트 2">
                 <h3>Defense Game</h3>
                 <p>1대1 전략 디펜스 게임</p>
                 <button onclick="showOverlay('overlay2')">더 알아보기</button>
@@ -60,40 +60,40 @@
     </section>
 
     <section id="2d">
-        <h2>2D Projects</h2>
+        <h2>2D 프로젝트</h2>
         <div class="project">
             <button onclick="showProject('project3')">Game Character Design</button>
-            <button onclick="showProject('project4')">Other Project</button>
+            <button onclick="showProject('project4')">기타 프로젝트</button>
             <div id="project3" class="project-details">
-                <img src="project3.jpg" alt="Project 3">
+                <img src="project3.jpg" alt="프로젝트 3">
                 <h3>Game Character Design</h3>
-                <p>Description of the project</p>
+                <p>프로젝트 설명</p>
                 <button onclick="showOverlay('overlay3')">더 알아보기</button>
             </div>
             <div id="project4" class="project-details">
-                <img src="project4.jpg" alt="Project 4">
-                <h3>Other Project</h3>
-                <p>Description of the project</p>
+                <img src="project4.jpg" alt="프로젝트 4">
+                <h3>기타 프로젝트</h3>
+                <p>프로젝트 설명</p>
                 <button onclick="showOverlay('overlay4')">더 알아보기</button>
             </div>
         </div>
     </section>
 
     <section id="3d">
-        <h2>3D Projects</h2>
+        <h2>3D 프로젝트</h2>
         <div class="project">
             <button onclick="showProject('project5')">3D Character Modeling</button>
             <button onclick="showProject('project6')">Game Environment Modeling</button>
             <div id="project5" class="project-details">
-                <img src="project5.jpg" alt="Project 5">
+                <img src="project5.jpg" alt="프로젝트 5">
                 <h3>3D Character Modeling</h3>
-                <p>Description of the project</p>
+                <p>프로젝트 설명</p>
                 <button onclick="showOverlay('overlay5')">더 알아보기</button>
             </div>
             <div id="project6" class="project-details">
-                <img src="project6.jpg" alt="Project 6">
+                <img src="project6.jpg" alt="프로젝트 6">
                 <h3>Game Environment Modeling</h3>
-                <p>Description of the project</p>
+                <p>프로젝트 설명</p>
                 <button onclick="showOverlay('overlay6')">더 알아보기</button>
             </div>
         </div>
@@ -102,8 +102,8 @@
     <div id="overlay" class="overlay">
         <div class="overlay-content">
             <span class="close" onclick="closeOverlay()">×</span>
-            <img src="overlay-image.jpg" alt="Overlay Image">
-            <p>Project details...</p>
+            <img src="overlay-image.jpg" alt="오버레이 이미지">
+            <p>프로젝트 세부 내용...</p>
         </div>
     </div>
 
