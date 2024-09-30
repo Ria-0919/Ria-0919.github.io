@@ -66,13 +66,11 @@
 
                 <h2>About Me</h2>
 
-                <p>이름: 이현준</p>
+                <p>이름: 홍길동</p>
 
-                <p>학력: </p>
+                <p>학력: OO 대학교 게임 디자인 학과</p>
 
-                <p>경력: </p>
-
-                <!-- 다른 챕터로 이동하는 버튼 -->
+                <p>경력: 게임 개발 경력 5년</p>
 
                 <div class="chapter-buttons">
 
@@ -100,33 +98,61 @@
 
         <div class="project-buttons">
 
-            <button onclick="showProject('project1')">Project Deception</button>
+            <button onclick="toggleProject('project1')">Adventure of Legends</button>
 
-            <button onclick="showProject('project2')">Defence Game</button>
+            <button onclick="toggleProject('project2')">Battle Arena</button>
 
         </div>
 
         <div id="project1" class="project hidden">
 
-            <img src="https://via.placeholder.com/600" alt="Adventure of Legends Image">
+            <div class="project-container">
 
-            <h3>Adventure of Legends</h3>
+                <img src="https://via.placeholder.com/300" alt="Adventure of Legends Image">
 
-            <p>실시간 마피아 추리게임입니다.</p>
+                <div class="project-description">
 
-            <button onclick="openProjectDetails()">더 알아보기</button>
+                    <h3>Adventure of Legends</h3>
+
+                    <p>플레이어가 신비한 세계를 탐험하는 RPG입니다.</p>
+
+                    <button onclick="showMore('project1-details')">더 알아보기</button>
+
+                </div>
+
+            </div>
+
+            <div id="project1-details" class="project-details hidden">
+
+                <p>Adventure of Legends는 다양한 도전 과제와 퀘스트로 가득한 신비한 세계를 탐험하는 게임입니다...</p>
+
+            </div>
 
         </div>
 
         <div id="project2" class="project hidden">
 
-            <img src="https://via.placeholder.com/600" alt="Battle Arena Image">
+            <div class="project-container">
 
-            <h3>Battle Arena</h3>
+                <img src="https://via.placeholder.com/300" alt="Battle Arena Image">
 
-            <p>횡스크롤 1대1 실시간 전략 디펜스 게임입니다.</p>
+                <div class="project-description">
 
-            <button onclick="openProjectDetails()">더 알아보기</button>
+                    <h3>Battle Arena</h3>
+
+                    <p>플레이어가 서로 대결하는 PvP 게임입니다.</p>
+
+                    <button onclick="showMore('project2-details')">더 알아보기</button>
+
+                </div>
+
+            </div>
+
+            <div id="project2-details" class="project-details hidden">
+
+                <p>Battle Arena는 전략적인 PvP 전투 게임으로, 플레이어는 상대와 경쟁하면서 스킬을 연마합니다...</p>
+
+            </div>
 
         </div>
 
@@ -140,7 +166,37 @@
 
         <h2>2D Art Projects</h2>
 
-        <!-- 동일한 구조로 프로젝트 구성 -->
+        <div class="project-buttons">
+
+            <button onclick="toggleProject('project3')">Fantasy Landscapes</button>
+
+        </div>
+
+        <div id="project3" class="project hidden">
+
+            <div class="project-container">
+
+                <img src="https://via.placeholder.com/300" alt="Fantasy Landscapes Image">
+
+                <div class="project-description">
+
+                    <h3>Fantasy Landscapes</h3>
+
+                    <p>다양한 판타지 배경을 그린 프로젝트입니다.</p>
+
+                    <button onclick="showMore('project3-details')">더 알아보기</button>
+
+                </div>
+
+            </div>
+
+            <div id="project3-details" class="project-details hidden">
+
+                <p>Fantasy Landscapes는 판타지 세계의 배경을 그린 아트 프로젝트로, 자연과 몽환적인 분위기를 표현합니다...</p>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -152,7 +208,37 @@
 
         <h2>3D Art Projects</h2>
 
-        <!-- 동일한 구조로 프로젝트 구성 -->
+        <div class="project-buttons">
+
+            <button onclick="toggleProject('project4')">3D Character Models</button>
+
+        </div>
+
+        <div id="project4" class="project hidden">
+
+            <div class="project-container">
+
+                <img src="https://via.placeholder.com/300" alt="3D Character Models Image">
+
+                <div class="project-description">
+
+                    <h3>3D Character Models</h3>
+
+                    <p>게임 캐릭터 모델링 작업입니다.</p>
+
+                    <button onclick="showMore('project4-details')">더 알아보기</button>
+
+                </div>
+
+            </div>
+
+            <div id="project4-details" class="project-details hidden">
+
+                <p>3D Character Models는 다양한 게임 캐릭터를 3D로 모델링한 프로젝트입니다...</p>
+
+            </div>
+
+        </div>
 
     </section>
 
