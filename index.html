@@ -4,60 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Game Concept Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Game Concept Portfolio</h1>
-        <nav>
-            <button onclick="showSection('profile')">Profile</button>
-            <button onclick="showSection('gameDesign')">Game Design</button>
-            <button onclick="showSection('2DArt')">2D Art</button>
-            <button onclick="showSection('3DArt')">3D Art</button>
-        </nav>
-    </header>
 
-    <main>
-        <section id="profile">
-            <h2>Profile</h2>
-            <p>안녕하세요! 저는 게임 개발에 열정을 가진 개발자입니다.</p>
-            <button onclick="showSubSection('gameProjects')">챕터 보기</button>
-        </section>
-
-        <section id="gameDesign">
-            <h2>Game Design Projects</h2>
-            <div id="gameProjects">
-                <div>
-                    <h3>Project Deception</h3>
-                    <p>실시간 추리 마피아 게임입니다.</p>
-                    <button onclick="openOverlay('gameDeception')">더 알아보기</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="2DArt">
-            <h2>2D Art Projects</h2>
-            <div>
-                <h3>Game Character Design</h3>
-                <p>캐릭터 디자인 프로젝트입니다.</p>
-                <button onclick="openOverlay('gameCharacter')">더 알아보기</button>
-            </div>
-        </section>
-
-        <section id="3DArt">
-            <h2>3D Art Projects</h2>
-            <div>
-                <h3>3D Character Modeling</h3>
-                <p>게임 캐릭터 모델링 작업입니다.</p>
-                <button onclick="openOverlay('characterModeling')">더 알아보기</button>
-            </div>
-        </section>
-    </main>
-
-    <div id="overlay" class="overlay" onclick="closeOverlay()">
-        <div id="overlayContent" onclick="event.stopPropagation();"></div>
-        <button class="close" onclick="closeOverlay()">닫기</button>
+    <div class="navbar" id="navbar">
+        <button onclick="scrollToSection('profile')">프로필</button>
+        <button onclick="scrollToSection('game-design')">게임 기획</button>
+        <button onclick="scrollToSection('2d')">2D 디자인</button>
+        <button onclick="scrollToSection('3d')">3D 디자인</button>
     </div>
+
+    <div class="background-image"></div>
+
+    <section class="chapter" id="profile">
+        <div class="profile-content">
+            <img src="face.jpg" alt="얼굴 사진" class="profile-image">
+            <div class="profile-description">
+                <h2>이름: 홍길동</h2>
+                <p>학력: 예시 대학 컴퓨터공학 전공</p>
+            </div>
+        </div>
+        <div class="chapter-buttons">
+            <button onclick="scrollToSection('game-design')">게임 기획</button>
+            <button onclick="scrollToSection('2d')">2D 디자인</button>
+            <button onclick="scrollToSection('3d')">3D 디자인</button>
+        </div>
+    </section>
+
+    <section class="chapter" id="game-design">
+        <h2>Game Design Projects</h2>
+        <div class="project" id="project1">
+            <h3>Project Deception</h3>
+            <p>실시간 추리 마피아게임</p>
+            <button onclick="toggleProject('project1-details')">작업 내용 보기</button>
+            <div class="project-details" id="project1-details">
+                <img src="project1.jpg" alt="Project Deception">
+                <p>자세한 내용: 게임의 기획 및 진행 방식...</p>
+            </div>
+        </div>
+        <div class="project" id="project2" style="display:none;">
+            <h3>Defense Game</h3>
+            <p>1대1 전략 디펜스 게임</p>
+            <button onclick="toggleProject('project2-details')">작업 내용 보기</button>
+            <div class="project-details" id="project2-details">
+                <img src="project2.jpg" alt="Defense Game">
+                <p>자세한 내용: 게임의 기획 및 진행 방식...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="chapter" id="2d">
+        <h2>Game Character Design</h2>
+        <div class="project" id="2d-project1">
+            <h3>2D 캐릭터 프로젝트 1</h3>
+            <p>설명 1...</p>
+            <button onclick="toggleProject('2d-project1-details')">작업 내용 보기</button>
+            <div class="project-details" id="2d-project1-details">
+                <img src="2d-project1.jpg" alt="2D 캐릭터 프로젝트 1">
+                <p>자세한 내용...</p>
+            </div>
+        </div>
+        <div class="project" id="2d-project2" style="display:none;">
+            <h3>2D 캐릭터 프로젝트 2</h3>
+            <p>설명 2...</p>
+            <button onclick="toggleProject('2d-project2-details')">작업 내용 보기</button>
+            <div class="project-details" id="2d-project2-details">
+                <img src="2d-project2.jpg" alt="2D 캐릭터 프로젝트 2">
+                <p>자세한 내용...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="chapter" id="3d">
+        <h2>3D Character Modeling</h2>
+        <div class="project" id="3d-project1">
+            <h3>3D 캐릭터 모델링 프로젝트 1</h3>
+            <p>설명 1...</p>
+            <button onclick="toggleProject('3d-project1-details')">작업 내용 보기</button>
+            <div class="project-details" id="3d-project1-details">
+                <img src="3d-project1.jpg" alt="3D 캐릭터 모델링 프로젝트 1">
+                <p>자세한 내용...</p>
+            </div>
+        </div>
+        <div class="project" id="3d-project2" style="display:none;">
+            <h3>Game Environment Modeling</h3>
+            <p>설명 2...</p>
+            <button onclick="toggleProject('3d-project2-details')">작업 내용 보기</button>
+            <div class="project-details" id="3d-project2-details">
+                <img src="3d-project2.jpg" alt="Game Environment Modeling">
+                <p>자세한 내용...</p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
