@@ -1,47 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('https://via.placeholder.com/1920x1080'); /* 배경 디자인 */
-  background-size: cover;
-  color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  z-index: 1000;
-  display: none; /* 스크롤 시 나타나도록 조정 */
+#scroll-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    padding: 10px;
+}
+
+.nav-btn {
+    border: none; /* No border */
+    background: none; /* No background */
+    color: #333; /* Text color */
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .chapter {
-  margin: 100px 0; /* 챕터 간격 조정 */
-  padding: 20px;
-  text-align: center;
+    padding: 50px 20px; /* Add more padding for spacing */
+    text-align: center; /* Center text */
 }
 
-.responsive-image {
-  width: 100%; /* 화면 너비에 맞춤 */
-  height: auto; /* 높이는 비율에 맞춰 조정 */
+.chapter + .chapter {
+    margin-top: 60px; /* Add margin between chapters */
 }
 
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-info {
-  margin-left: 20px;
-}
-
-.chapter-nav {
-  margin-top: 20px;
-}
-
-.project-container {
-  margin-top: 20px;
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
 }
