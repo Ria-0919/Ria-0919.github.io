@@ -27,8 +27,8 @@ nav {
 }
 
 .chapter {
-  padding: 80px 0; /* 섹션 간 여백 */
-  height: 100vh; /* 섹션 높이 */
+  padding: 40px 0; /* 섹션 간 여백 */
+  margin-bottom: 20px; /* 섹션 아래 여백 */
   background-size: cover;
   background-position: center;
 }
