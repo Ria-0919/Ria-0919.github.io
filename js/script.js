@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 navButtons.forEach(button => {
   button.addEventListener('click', () => {
     const targetId = button.getAttribute('data-target');
-    const targetElement = document.querySelector(targetId);
+    const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
