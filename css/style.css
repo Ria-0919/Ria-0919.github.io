@@ -12,6 +12,7 @@ header {
     text-align: center;
     padding: 10px 0;
     z-index: 1000;
+    display: none; /* 처음에 숨김 */
 }
 
 .nav-btn {
@@ -19,14 +20,31 @@ header {
     background: none;
     margin: 0 15px;
     cursor: pointer;
-    font-size: 20px; /* 크기 증가 */
+    font-size: 24px; /* 크기 증가 */
     padding: 10px 20px; /* 패딩 추가 */
 }
 
 .chapter {
     padding: 100px 0;
     margin: 50px 0;
+    position: relative;
     text-align: center;
+}
+
+.chapter img {
+    width: 100%;
+    height: 500px; /* 높이 증가 */
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+.chapter-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 글자색 */
+    font-size: 36px; /* 글자 크기 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
 }
 
 .profile-container {
