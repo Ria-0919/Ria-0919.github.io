@@ -1,54 +1,43 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 0;
+  justify-content: center; /* 중앙 정렬 */
+  padding: 10px 0; /* 상하 패딩 */
+  background: rgba(255, 255, 255, 0.9); /* 반투명 흰색 배경 */
+  z-index: 1000; /* 가장 위에 표시 */
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li button {
+.nav-btn {
   background: none;
   border: none;
-  color: white;
+  color: #333;
+  font-size: 20px; /* 버튼 글자 크기 */
+  margin: 0 15px; /* 좌우 마진 */
   cursor: pointer;
-  font-size: 16px;
 }
 
 .chapter {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
   background-size: cover;
+  background-position: center;
+  padding: 60px 20%; /* 상하 여백 60px, 좌우 여백 20% */
+  margin: 20px 0; /* 섹션 간 간격 */
+  position: relative; /* 자식 요소를 절대 위치로 만들기 위한 설정 */
 }
 
 .hero-container {
-  text-align: center;
-}
-
-.project-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.project-details {
-  text-align: center;
-  margin-top: 20px;
+  position: relative; /* 제목 위치 조정 */
+  padding-top: 20px; /* 제목 위 여백 */
+  background-color: rgba(255, 255, 255, 0.7); /* 배경에 반투명 색 추가 */
+  border-radius: 10px; /* 테두리 둥글게 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  max-width: 80%; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
 }
