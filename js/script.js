@@ -12,24 +12,10 @@ window.addEventListener('scroll', () => {
 navButtons.forEach(button => {
   button.addEventListener('click', () => {
     const targetId = button.getAttribute('data-target');
-    const targetElement = document.getElementById(targetId);
+    const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-const projectButtons = document.querySelectorAll('.project-btn');
-const projectDetails = document.querySelectorAll('.project-details');
-
-projectButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const targetId = button.getAttribute('data-target');
-    const targetDetail = document.getElementById(targetId);
-
-    if (targetDetail) {
-      targetDetail.style.display = targetDetail.style.display === 'none' ? 'block' : 'none';
     }
   });
 });
