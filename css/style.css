@@ -1,72 +1,57 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-header {
+#scroll-nav {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
-  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
   justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
   display: flex;
-  gap: 15px;
 }
 
 .nav-btn {
-  background: none;
+  margin: 0 10px;
+  padding: 10px 15px;
   border: none;
-  font-size: 16px;
+  background: none;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .chapter {
-  height: 100vh; /* 섹션 높이를 100vh로 설정 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 0; /* 섹션 간격을 넓게 설정 */
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('https://via.placeholder.com/800x400');
+  background-size: cover;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .hero-container {
-  width: 100%;
-  height: 70%; /* 사진 높이 조정 */
-  background-image: url('your-temporary-image.jpg'); /* 임시 이미지로 변경 */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* 제목을 상단에 위치시킴 */
-  padding: 20px;
-  color: white; /* 글자 색상 */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-container {
   display: flex;
-  flex-direction: column;
-  gap: 10px; /* 버튼 간격 설정 */
+  justify-content: center;
+  gap: 10px;
 }
 
 .project-btn {
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px; /* 버튼 크기 조정 */
-  text-align: center;
-}
-
-.project-details {
-  display: none; /* 기본적으로 프로젝트 세부사항 숨김 */
-  padding: 20px;
-  background: #f1f1f1;
   margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
