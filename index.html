@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header id="scroll-nav">
-    <nav>
-      <button class="nav-btn" data-target="#profile">프로필</button>
-      <button class="nav-btn" data-target="#game-design">게임 기획</button>
-      <button class="nav-btn" data-target="#2d-design">2D 디자인</button>
-      <button class="nav-btn" data-target="#3d-design">3D 디자인</button>
-    </nav>
-  </header>
+    <header id="scroll-nav">
+        <nav>
+            <button class="nav-btn" data-target="#home">Home</button>
+            <button class="nav-btn" data-target="#profile">Profile</button>
+            <button class="nav-btn" data-target="#game-design">Game Design</button>
+            <button class="nav-btn" data-target="#2d-design">2D Art</button>
+            <button class="nav-btn" data-target="#3d-design">3D Art</button>
+        </nav>
+    </header>
 
-  <section id="hero">
-    <img src="https://via.placeholder.com/1200x400" alt="배경 이미지" class="responsive-image" />
-  </section>
+    <section id="home" class="chapter">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a brief introduction.</p>
+    </section>
 
-  <section id="profile" class="chapter">
-    <div class="profile-container">
-      <img src="https://via.placeholder.com/200" alt="프로필 이미지" />
-      <div class="profile-info">
-        <h2>홍길동</h2>
-        <p>서울대학교 컴퓨터공학과 졸업</p>
-        <p>게임 개발 경력 5년</p>
-      </div>
-    </div>
-    <div class="chapter-nav">
-      <button class="nav-btn" data-target="#game-design">게임 기획</button>
-      <button class="nav-btn" data-target="#2d-design">2D 디자인</button>
-      <button class="nav-btn" data-target="#3d-design">3D 디자인</button>
-    </div>
-  </section>
+    <section id="profile" class="chapter">
+        <h2>Profile</h2>
+        <div class="profile-container">
+            <img src="your-profile-image.jpg" alt="Profile Image" />
+            <div class="profile-info">
+                <h3>Your Name</h3>
+                <p>Details about yourself.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="game-design" class="chapter">
-    <h2>Game Design Projects</h2>
-    <div class="project-container">
-      <button class="project-btn" data-target="#project-deception">Project Deception</button>
-      <button class="project-btn" data-target="#defense-game">Defense Game</button>
-    </div>
-    <div id="project-content">
-      <!-- 프로젝트 내용이 이곳에 나타납니다 -->
-    </div>
-  </section>
+    <section id="game-design" class="chapter">
+        <h2>Game Design Projects</h2>
+        <div class="project-container">
+            <button class="project-btn" data-target="#project-deception">Project Deception</button>
+            <button class="project-btn" data-target="#defense-game">Defense Game</button>
+        </div>
+    </section>
 
-  <section id="2d-design" class="chapter">
-    <h2>Game Character Design</h2>
-    <div class="project-container">
-      <button class="project-btn" data-target="#character-design-1">Character Design 1</button>
-      <button class="project-btn" data-target="#character-design-2">Character Design 2</button>
-      <button class="project-btn" data-target="#character-design-3">Character Design 3</button>
-    </div>
-  </section>
+    <section id="2d-design" class="chapter">
+        <h2>Game Character Design</h2>
+        <div class="project-container">
+            <button class="project-btn" data-target="#character-design-1">Character Design 1</button>
+            <button class="project-btn" data-target="#character-design-2">Character Design 2</button>
+            <button class="project-btn" data-target="#character-design-3">Character Design 3</button>
+        </div>
+    </section>
 
-  <section id="3d-design" class="chapter">
-    <h2>3D Character Modeling & Environment</h2>
-    <div class="project-container">
-      <button class="project-btn" data-target="#3d-modeling-1">3D Character Modeling</button>
-      <button class="project-btn" data-target="#3d-environment">Game Environment Modeling</button>
-    </div>
-  </section>
+    <section id="3d-design" class="chapter">
+        <h2>3D Character Modeling & Environment</h2>
+        <div class="project-container">
+            <button class="project-btn" data-target="#3d-modeling-1">3D Character Modeling</button>
+            <button class="project-btn" data-target="#3d-environment">Game Environment Modeling</button>
+        </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
