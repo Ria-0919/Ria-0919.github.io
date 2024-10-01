@@ -1,16 +1,19 @@
-/* 전체 레이아웃 */
+/* 전체적인 스타일 */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f0f0f0;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  display: none; /* 스크롤 시 나타나게 하기 위한 기본 설정 */
+  justify-content: center;
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -18,36 +21,44 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .nav-btn {
-  background: transparent;
+  background: none;
   border: none;
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
   cursor: pointer;
-  padding: 20px;
-  margin: 0 15px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  margin: 0 20px;
+  transition: color 0.3s ease;
 }
 
 .nav-btn:hover {
   color: #007BFF;
-  border-bottom: 3px solid #007BFF;
 }
 
-/* 챕터 섹션 */
+/* 스크롤 시 네비게이션이 나타나도록 설정 */
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if (window.scrollY > 50) {
+    header.style.display = 'flex';
+  } else {
+    header.style.display = 'none';
+  }
+});
+
+/* 섹션 스타일 */
 .chapter {
   padding: 100px 50px;
-  background-size: cover;
-  background-position: center;
   text-align: center;
-  color: white;
+  color: #fff;
   position: relative;
   min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .chapter h2 {
@@ -58,33 +69,55 @@ nav {
 .chapter-nav {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-/* 프로젝트 버튼 */
 .project-btn {
-  background-color: #007BFF;
+  background: none;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
-  margin: 10px;
-  transition: background-color 0.3s ease;
+  margin: 20px;
+  transition: color 0.3s ease;
 }
 
 .project-btn:hover {
-  background-color: #0056b3;
+  color: #007BFF;
 }
 
-/* 이미지 섹션 스타일 */
-#profile, #game-design, #2d-design, #3d-design {
-  background-image: url('your-temp-image.jpg');
-  background-size: cover;
-  background-position: center;
+/* 섹션 배경 이미지 설정 */
+#home {
+  background-image: url('path_to_temp_image');
 }
 
-/* 섹션별 간격 */
-.chapter {
-  margin: 100px 0;
+#profile {
+  background-image: url('path_to_temp_image');
+}
+
+#game-design {
+  background-image: url('path_to_temp_image');
+}
+
+#two-d-art {
+  background-image: url('path_to_temp_image');
+}
+
+#three-d-art {
+  background-image: url('path_to_temp_image');
+}
+
+/* 버튼 스타일 */
+.project-btn {
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.project-btn:hover {
+  color: #007BFF;
 }
