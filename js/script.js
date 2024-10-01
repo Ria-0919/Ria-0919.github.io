@@ -2,11 +2,7 @@ const navButtons = document.querySelectorAll('.nav-btn');
 const scrollNav = document.getElementById('scroll-nav');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    scrollNav.style.display = 'flex';
-  } else {
-    scrollNav.style.display = 'none';
-  }
+  scrollNav.style.display = window.scrollY > 50 ? 'flex' : 'none';
 });
 
 navButtons.forEach(button => {
