@@ -1,80 +1,70 @@
-/* General styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
   position: fixed;
   top: 0;
-  width: 100%;
-  display: none;
+  left: 0;
+  right: 0;
+  display: flex;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1000;
 }
 
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
 .nav-btn {
-  background: none;
+  padding: 15px 20px;
+  font-size: 16px;
   border: none;
-  font-size: 20px;
-  margin: 10px;
+  background: transparent;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .nav-btn:hover {
-  text-decoration: underline;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 .chapter {
-  min-height: 100vh;
-  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   text-align: center;
-  background-color: #f5f5f5;
+  background-size: cover;
+  margin-top: 60px; /* Adjusts for fixed header */
 }
 
 .hero-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  color: white;
-}
-
-h1, h2 {
-  font-size: 3rem;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-container {
   display: flex;
-  justify-content: center;
+  gap: 20px;
 }
 
 .project-btn {
-  background: none;
+  padding: 10px 15px;
+  font-size: 14px;
   border: none;
-  font-size: 18px;
+  background: transparent;
   color: white;
-  margin: 20px;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
 
 .project-btn:hover {
-  text-decoration: underline;
-}
-
-/* Add spacing between chapters */
-.chapter {
-  margin-bottom: 60px;
-}
-
-/* Hide header initially */
-#scroll-nav {
-  display: none;
+  opacity: 0.8;
 }
