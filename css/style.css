@@ -24,7 +24,7 @@
 /* 반응형 이미지 */
 .responsive-image {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
-
-/* 기타 스타일... */
