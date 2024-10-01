@@ -20,17 +20,19 @@ navButtons.forEach(button => {
   });
 });
 
-// 추가된 코드
 const projectButtons = document.querySelectorAll('.project-btn');
-const projectDisplay = document.getElementById('project-display');
 
 projectButtons.forEach(button => {
   button.addEventListener('click', () => {
     const targetId = button.getAttribute('data-target');
-    const projectInfo = document.querySelector(targetId);
 
-    if (projectInfo) {
-      projectDisplay.innerHTML = projectInfo.innerHTML;
+    document.querySelectorAll('.project-details').forEach(detail => {
+      detail.style.display = 'none'; // 모든 프로젝트 설명 숨기기
+    });
+
+    const targetDetail = document.querySelector(targetId);
+    if (targetDetail) {
+      targetDetail.style.display = 'block'; // 클릭한 프로젝트 설명 보여주기
     }
   });
 });
