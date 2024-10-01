@@ -16,7 +16,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 중앙 정렬 */
     padding: 10px 0;
 }
 
@@ -30,7 +30,7 @@ nav {
 }
 
 .chapter {
-    padding: 100px 20px;
+    padding: 120px 20px; /* 여백 추가 */
     height: 100vh;
     display: flex;
     align-items: center;
