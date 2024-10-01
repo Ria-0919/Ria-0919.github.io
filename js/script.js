@@ -19,3 +19,4 @@ navButtons.forEach(button => {
     }
   });
 });
+
