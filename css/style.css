@@ -1,92 +1,65 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  padding: 0;
 }
 
-header {
+#scroll-nav {
   position: fixed;
-  top: 0;
+  top: 10px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
   z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 0;
-  text-align: center; /* 버튼을 중앙 정렬 */
-}
-
-nav {
-  display: flex;
-  justify-content: center;
 }
 
 .nav-btn {
-  font-size: 20px;
-  margin: 0 15px;
-  padding: 10px 20px;
-  cursor: pointer;
+  background: none;
   border: none;
-  background: transparent;
-  position: relative; /* 밑줄 효과를 위해 relative 설정 */
-  transition: color 0.3s;
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 .nav-btn:hover {
-  color: #007BFF;
-}
-
-.nav-btn:hover::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: #007BFF;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px; /* 버튼 밑에 위치 */
+  color: blue;
+  text-decoration: underline;
 }
 
 .chapter {
-  width: 80%; /* 섹션 너비 조정 */
-  height: 500px; /* 섹션 높이 증가 */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  background-size: cover;
+  padding: 50px 0;
+  margin: 50px 0;
   color: white;
-  background-size: contain; /* 배경 이미지가 중앙에 위치하도록 조정 */
-  background-repeat: no-repeat;
-  margin: 60px auto; /* 섹션 간격 증가 및 중앙 정렬 */
 }
 
 .hero-container {
   text-align: center;
-  margin-top: 20px;
-}
-
-h1, h2 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 28px;
 }
 
 .project-container {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .project-btn {
-  font-size: 18px;
   margin: 0 10px;
   padding: 10px 20px;
   cursor: pointer;
+  background-color: white;
+  color: black;
   border: none;
-  background: transparent;
-  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .project-btn:hover {
-  color: #007BFF;
+  background-color: lightgray;
+}
+
+.project-details {
+  text-align: center;
+  margin-top: 20px;
 }
