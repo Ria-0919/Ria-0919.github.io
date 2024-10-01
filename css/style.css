@@ -28,7 +28,6 @@ header {
     padding: 100px 0;
     margin: 50px 0;
     position: relative;
-    text-align: center;
 }
 
 .chapter img {
@@ -51,15 +50,23 @@ header {
     margin-top: 80px; /* 버튼과 제목 간의 간격 */
 }
 
-.project-container,
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile-background,
+.design-background,
+.art-background {
+    position: relative;
 }
 
-.profile-info {
-    margin-left: 20px;
+.profile-content,
+.button-container {
+    position: absolute;
+    top: 150px; /* 버튼 위치 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-image {
+    width: 150px; /* 프로필 이미지 크기 조정 */
+    border-radius: 50%; /* 원형 */
 }
 
 img {
