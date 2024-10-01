@@ -1,54 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 20px;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none; /* Initially hidden */
+  z-index: 10;
+  justify-content: center;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  padding: 10px 0;
 }
 
 .nav-btn {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    background: none;
-    cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .chapter {
-    padding: 100px 20px;
-    background: url('your-background-image.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-align: center;
+  padding: 100px 20px;
+  background: url('https://via.placeholder.com/800x400') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
 .hero-container {
-    margin: 0 auto;
-    max-width: 800px;
+  padding: 20px;
 }
 
 .project-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .project-btn {
-    margin: 0 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
