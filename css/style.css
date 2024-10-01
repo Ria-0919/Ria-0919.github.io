@@ -1,48 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
     position: fixed;
     top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: top 0.3s;
-    display: none; /* 처음에는 숨김 */
-}
-
-nav {
-    display: flex;
-    justify-content: center; /* 중앙 정렬 */
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
     padding: 10px 0;
+    z-index: 1000;
 }
 
 .nav-btn {
-    margin: 0 10px;
-    padding: 10px;
     border: none;
-    background: transparent;
-    font-size: 16px;
+    background: none;
+    margin: 0 15px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .chapter {
-    padding: 120px 20px; /* 여백 추가 */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 100px 0;
+    margin: 50px 0;
     text-align: center;
-    background-image: url('https://via.placeholder.com/1200x800'); /* 배경 이미지 */
-    background-size: cover;
-    color: white;
 }
 
 .profile-container {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -50,10 +38,7 @@ nav {
     margin-left: 20px;
 }
 
-.project-container {
-    margin-top: 20px;
-}
-
-.project-btn {
-    margin: 0 10px;
+img {
+    max-width: 100%;
+    height: auto;
 }
