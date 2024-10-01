@@ -1,44 +1,59 @@
-/* styles.css */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  position: fixed; /* 상단 고정 */
-  top: 0; 
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1000; /* 다른 요소 위에 나타나도록 */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s;
+    display: none; /* 처음에는 숨김 */
 }
 
 nav {
-  display: flex;
-  justify-content: center; /* 중앙 정렬 */
-  padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .nav-btn {
-  border: none; /* 테두리 없음 */
-  background: none; /* 배경 없음 */
-  margin: 0 15px; /* 간격 */
-  font-size: 18px; /* 글자 크기 */
-  cursor: pointer; /* 클릭 가능 커서 */
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .chapter {
-  padding: 80px 20px; /* 챕터 간격 조정 */
-  margin-top: 60px; /* 헤더 아래 여백 */
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://via.placeholder.com/1200x800'); /* 배경 이미지 */
+    background-size: cover;
+    color: white;
 }
 
-/* 이미지 크기 조절 */
-#hero img {
-  width: 100%;
-  height: auto; /* 비율 유지 */
+.profile-container {
+    display: flex;
+    align-items: center;
 }
 
-.profile-container img {
-  width: 150px;
-  height: auto; /* 비율 유지 */
+.profile-info {
+    margin-left: 20px;
+}
+
+.project-container {
+    margin-top: 20px;
+}
+
+.project-btn {
+    margin: 0 10px;
 }
