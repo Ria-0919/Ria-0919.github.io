@@ -16,11 +16,11 @@ header {
 }
 
 .nav-btn {
-    border: none;
+    border: none; /* 테두리 없음 */
     background: none;
     margin: 0 15px;
     cursor: pointer;
-    font-size: 24px; /* 크기 증가 */
+    font-size: 28px; /* 글자 크기 증가 */
     padding: 10px 20px; /* 패딩 추가 */
 }
 
@@ -46,27 +46,33 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
 }
 
-.button-container {
-    margin-top: 80px; /* 버튼과 제목 간의 간격 */
-}
-
 .profile-background,
 .design-background,
 .art-background {
     position: relative;
 }
 
-.profile-content,
-.button-container {
+.profile-info {
     position: absolute;
-    top: 150px; /* 버튼 위치 조정 */
+    top: 150px; /* 텍스트 위치 조정 */
     left: 50%;
     transform: translateX(-50%);
+    color: white; /* 글자색 */
+    font-size: 24px; /* 글자 크기 증가 */
+    text-align: center; /* 중앙 정렬 */
 }
 
-.profile-image {
-    width: 150px; /* 프로필 이미지 크기 조정 */
-    border-radius: 50%; /* 원형 */
+.button-container {
+    margin-top: 80px; /* 버튼과 제목 간의 간격 */
+}
+
+.project-btn {
+    border: none; /* 테두리 없음 */
+    background: none; /* 배경 없음 */
+    color: white; /* 글자색 */
+    font-size: 20px; /* 버튼 글자 크기 */
+    cursor: pointer; /* 손 모양 */
+    padding: 10px 20px; /* 패딩 추가 */
 }
 
 img {
