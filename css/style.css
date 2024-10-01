@@ -19,7 +19,8 @@ header {
     background: none;
     margin: 0 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px; /* 크기 증가 */
+    padding: 10px 20px; /* 패딩 추가 */
 }
 
 .chapter {
@@ -41,4 +42,6 @@ header {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto; /* 이미지 중앙 정렬 */
 }
