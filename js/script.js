@@ -19,3 +19,18 @@ navButtons.forEach(button => {
     }
   });
 });
+
+// 추가된 코드
+const projectButtons = document.querySelectorAll('.project-btn');
+const projectDisplay = document.getElementById('project-display');
+
+projectButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.getAttribute('data-target');
+    const projectInfo = document.querySelector(targetId);
+
+    if (projectInfo) {
+      projectDisplay.innerHTML = projectInfo.innerHTML;
+    }
+  });
+});
