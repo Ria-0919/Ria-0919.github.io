@@ -20,8 +20,8 @@ header nav {
 }
 
 .nav-btn {
-  padding: 15px 20px;
-  font-size: 16px;
+  padding: 20px 25px; /* Increased padding for larger buttons */
+  font-size: 20px; /* Increased font size */
   border: none;
   background: transparent;
   cursor: pointer;
@@ -66,5 +66,20 @@ header nav {
 }
 
 .project-btn:hover {
+  opacity: 0.8;
+}
+
+.simple-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px; /* Margin below the button */
+  transition: opacity 0.3s;
+}
+
+.simple-btn:hover {
   opacity: 0.8;
 }
