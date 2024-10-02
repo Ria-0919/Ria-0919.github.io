@@ -1,7 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -9,35 +8,57 @@ header {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* 중앙 정렬 */
-  padding: 10px 0; /* 상하 패딩 */
-  background: rgba(255, 255, 255, 0.9); /* 반투명 흰색 배경 */
-  z-index: 1000; /* 가장 위에 표시 */
+  justify-content: center; /* 가운데 정렬 */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  z-index: 1000;
 }
 
 .nav-btn {
+  margin: 0 15px;
+  font-size: 20px; /* 버튼 글자 크기 */
+  color: white;
   background: none;
   border: none;
-  color: #333;
-  font-size: 20px; /* 버튼 글자 크기 */
-  margin: 0 15px; /* 좌우 마진 */
   cursor: pointer;
 }
 
 .chapter {
-  background-size: cover;
-  background-position: center;
-  padding: 60px 20%; /* 상하 여백 60px, 좌우 여백 20% */
-  margin: 20px 0; /* 섹션 간 간격 */
-  position: relative; /* 자식 요소를 절대 위치로 만들기 위한 설정 */
+  background-size: 1680px 1000px; /* 이미지 크기 고정 */
+  background-repeat: no-repeat;
+  padding: 60px 0; /* 위아래 여백 */
+  margin: 40px 0; /* 섹션 간 여백 */
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#profile {
+  background-image: url('https://github.com/user-attachments/assets/2f49689f-77b7-46ef-8baa-28be223b4e02');
+}
+
+#game-design, #two-d-art, #three-d-art {
+  background-image: url('https://via.placeholder.com/1680x1000'); /* 임시 배경 이미지 */
 }
 
 .hero-container {
-  position: relative; /* 제목 위치 조정 */
-  padding-top: 20px; /* 제목 위 여백 */
-  background-color: rgba(255, 255, 255, 0.7); /* 배경에 반투명 색 추가 */
-  border-radius: 10px; /* 테두리 둥글게 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-  max-width: 80%; /* 최대 너비 설정 */
-  margin: 0 auto; /* 가운데 정렬 */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.project-details {
+  display: none;
+  margin-top: 20px;
 }
