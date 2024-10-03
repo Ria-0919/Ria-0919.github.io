@@ -45,7 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px;
+    padding: 100px;
     margin-bottom: 5vh; /* 높이에 비례한 간격 */
 }
 
