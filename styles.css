@@ -49,7 +49,6 @@ body {
     margin-bottom: 5vh; /* 높이에 비례한 간격 */
 }
 
-
 /* 섹션 배경 스타일 */
 .section-bg {
     width: 1680px;
@@ -61,7 +60,6 @@ body {
     padding: 10px;
     color: white;
 }
-
 
 /* 헤딩 스타일 */
 h2 {
@@ -87,13 +85,13 @@ h2 {
 /* 작은 화면용 여백 설정 */
 @media (max-width: 600px) {
     .section {
-        margin-bottom: 8vh;
+        margin-bottom: 8vh; /* 작은 화면에서 간격을 늘림 */
     }
 }
 
 /* 큰 화면용 여백 설정 */
 @media (min-width: 1200px) {
     .section {
-        margin-bottom: 3vh;
+        margin-bottom: 3vh; /* 큰 화면에서 간격을 줄임 */
     }
 }
