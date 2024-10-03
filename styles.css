@@ -3,11 +3,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box; /* 모든 요소에 box-sizing 적용 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
 
 *, *::before, *::after {
@@ -51,13 +46,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
-}
 
 /* 섹션 배경 스타일 */
 .section-bg {
     width: 1680px;
-    height: 1000px;
-    aspect-ratio: 16 / 9;
+    height: 1000px; /* 높이는 이미지 비율에 맞춰 자동으로 조정 */
+    aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,62 +83,13 @@ h2 {
 /* 작은 화면용 여백 설정 */
 @media (max-width: 600px) {
     .section {
-        margin-bottom: 5vh;
+        margin-bottom: 5vh; /* 작은 화면에서 간격을 줄임 */
     }
 }
 
 /* 큰 화면용 여백 설정 */
 @media (min-width: 1200px) {
     .section {
-        margin-bottom: 15vh;
+        margin-bottom: 15vh; /* 큰 화면에서 간격을 늘림 */
     }
-}
-
-/* 책 페이지 애니메이션 스타일 */
-#book {
-    width: 800px; /* 책이 펼쳐졌을 때의 너비 */
-    height: 600px; /* 책의 높이 */
-    perspective: 1000px;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-.page {
-    position: absolute;
-    width: 50%; /* 각 페이지의 너비를 50%로 설정 */
-    height: 100%;
-    backface-visibility: hidden;
-    transition: transform 1s;
-}
-
-#cover {
-    z-index: 3;
-    transform-origin: left;
-    right: 0;
-}
-
-#leftPage {
-    z-index: 2;
-    transform: rotateY(180deg);
-    transform-origin: 210% 50%;
-    right: 105%;
-}
-
-#rightPage {
-    z-index: 1;
-    transform: rotateY(0);
-    transform-origin: right;
-    right: 0;
-}
-
-.open #cover {
-    transform: rotateY(-180deg);
-}
-
-.open #leftPage {
-    transform: rotateY(0);
-}
-
-.open #rightPage {
-    transform: rotateY(0);
 }
