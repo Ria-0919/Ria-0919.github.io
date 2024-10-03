@@ -45,7 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 10vh;
 
 /* 섹션 배경 스타일 */
 .section-bg {
@@ -78,18 +78,4 @@ h2 {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-/* 작은 화면용 여백 설정 */
-@media (max-width: 600px) {
-    .section {
-        margin-bottom: 8vh; /* 작은 화면에서 간격을 늘림 */
-    }
-}
-
-/* 큰 화면용 여백 설정 */
-@media (min-width: 1200px) {
-    .section {
-        margin-bottom: 3vh; /* 큰 화면에서 간격을 줄임 */
-    }
 }
