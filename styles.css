@@ -46,8 +46,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 200px;
-    margin-bottom: 50px; /* 고정된 간격으로 변경 */
+    margin-bottom: 5vh; /* 높이에 비례한 간격 */
 }
+
 
 /* 섹션 배경 스타일 */
 .section-bg {
