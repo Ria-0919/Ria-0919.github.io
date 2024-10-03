@@ -2,6 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box; /* 모든 요소에 box-sizing 적용 */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* 모든 요소에 box-sizing 상속 */
 }
 
 /* 스크롤 내비게이션 스타일 */
@@ -42,7 +47,6 @@ body {
     justify-content: center;
     padding: 200px;
     margin-bottom: 5vh; /* 섹션 간의 비율에 따른 공간 */
-    box-sizing: border-box; /* 요소의 크기를 계산할 때 패딩과 보더를 포함 */
 }
 
 /* 섹션 배경 스타일 */
@@ -57,7 +61,6 @@ body {
     justify-content: flex-start;
     padding: 10px;
     color: white;
-    box-sizing: border-box; /* 요소의 크기를 계산할 때 패딩과 보더를 포함 */
 }
 
 /* 헤딩 스타일 */
