@@ -73,6 +73,7 @@ h2 {
 .profile-content {
     display: flex;
     align-items: center;
+    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
 }
 
 .profile-content img {
