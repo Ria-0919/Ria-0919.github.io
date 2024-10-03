@@ -79,3 +79,17 @@ h2 {
     height: auto;
     object-fit: cover;
 }
+
+/* 작은 화면용 여백 설정 */
+@media (max-width: 600px) {
+    .section {
+        margin-bottom: 5vh; /* 작은 화면에서 간격을 줄임 */
+    }
+}
+
+/* 큰 화면용 여백 설정 */
+@media (min-width: 1200px) {
+    .section {
+        margin-bottom: 15vh; /* 큰 화면에서 간격을 늘림 */
+    }
+}
