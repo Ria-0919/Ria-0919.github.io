@@ -75,16 +75,3 @@ h2 {
     margin-right: 20px;
 }
 
-/* 작은 화면용 여백 설정 */
-@media (max-width: 600px) {
-    .section {
-        margin-bottom: 8vh; /* 작은 화면에서는 여백을 더 크게 설정 */
-    }
-}
-
-/* 큰 화면용 여백 설정 */
-@media (min-width: 1200px) {
-    .section {
-        margin-bottom: 3vh; /* 큰 화면에서는 여백을 더 작게 설정 */
-    }
-}
