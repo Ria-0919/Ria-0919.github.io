@@ -1,89 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-  <header id="scroll-nav">
-    <nav>
-      <button class="nav-btn" data-target="#home">Home</button>
-      <button class="nav-btn" data-target="#profile">Profile</button>
-      <button class="nav-btn" data-target="#game-design">Game Design</button>
-      <button class="nav-btn" data-target="#two-d-art">2D Art</button>
-      <button class="nav-btn" data-target="#three-d-art">3D Art</button>
-    </nav>
-  </header>
-
-  <section id="home" class="chapter" style="background-image: url('https://via.placeholder.com/1920x400');">
-    <div class="hero-container">
-      <h1>Welcome to My Portfolio</h1>
+    <div class="scroll-nav" id="scroll-nav">
+        <button class="nav-btn" data-target="#home">Home</button>
+        <button class="nav-btn" data-target="#profile">Profile</button>
+        <button class="nav-btn" data-target="#game-design">Game Design</button>
+        <button class="nav-btn" data-target="#two-d-art">2D Art</button>
+        <button class="nav-btn" data-target="#three-d-art">3D Art</button>
     </div>
-  </section>
 
-  <section id="profile" class="chapter" style="background-image: url('https://github.com/user-attachments/assets/2f49689f-77b7-46ef-8baa-28be223b4e02'); background-size: cover;">
-    <div class="hero-container">
-      <h2>Profile</h2>
-      <p>서울대학교 컴퓨터공학과 졸업<br>게임 개발 경력 5년</p>
-    </div>
-  </section>
+    <section class="section" id="home">
+        <div class="section-bg" style="background-image: url('https://via.placeholder.com/1680x1000');">
+            <h2>Welcome!</h2>
+            <p>Welcome to my portfolio.</p>
+        </div>
+    </section>
 
-  <section id="game-design" class="chapter" style="background-image: url('https://via.placeholder.com/1920x400');">
-    <div class="hero-container">
-      <h2>Game Design</h2>
-      <div class="project-container">
-        <button class="project-btn" data-target="#project-deception">Project Deception</button>
-        <button class="project-btn" data-target="#defense-game">Defense Game</button>
-      </div>
-      <div id="project-deception" class="project-details">
-        <p>Project Deception 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="Project Deception" />
-      </div>
-      <div id="defense-game" class="project-details" style="display:none;">
-        <p>Defense Game 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="Defense Game" />
-      </div>
-    </div>
-  </section>
+    <section class="section" id="profile">
+        <div class="section-bg" style="background-image: url('https://github.com/user-attachments/assets/2f49689f-77b7-46ef-8baa-28be223b4e02');">
+            <h2>Profile</h2>
+            <div class="profile-content">
+                <img src="https://via.placeholder.com/150" alt="Profile Image">
+                <p>Name: Hong Gil-Dong<br>Major: Game Design</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="two-d-art" class="chapter" style="background-image: url('https://via.placeholder.com/1920x400');">
-    <div class="hero-container">
-      <h2>2D Art</h2>
-      <div class="project-container">
-        <button class="project-btn" data-target="#character-design-1">Character Design 1</button>
-        <button class="project-btn" data-target="#character-design-2">Character Design 2</button>
-      </div>
-      <div id="character-design-1" class="project-details">
-        <p>Character Design 1 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="Character Design 1" />
-      </div>
-      <div id="character-design-2" class="project-details" style="display:none;">
-        <p>Character Design 2 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="Character Design 2" />
-      </div>
-    </div>
-  </section>
+    <section class="section" id="game-design">
+        <div class="section-bg" style="background-image: url('https://via.placeholder.com/1680x1000');">
+            <h2>Game Design</h2>
+            <p>Here is the description of game design.</p>
+        </div>
+    </section>
 
-  <section id="three-d-art" class="chapter" style="background-image: url('https://via.placeholder.com/1920x400');">
-    <div class="hero-container">
-      <h2>3D Art</h2>
-      <div class="project-container">
-        <button class="project-btn" data-target="#3d-character-modeling">3D Character Modeling</button>
-        <button class="project-btn" data-target="#game-environment-modeling">Game Environment Modeling</button>
-      </div>
-      <div id="3d-character-modeling" class="project-details">
-        <p>3D Character Modeling 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="3D Character Modeling" />
-      </div>
-      <div id="game-environment-modeling" class="project-details" style="display:none;">
-        <p>Game Environment Modeling 설명글입니다.</p>
-        <img src="https://via.placeholder.com/400" alt="Game Environment Modeling" />
-      </div>
-    </div>
-  </section>
+    <section class="section" id="two-d-art">
+        <div class="section-bg" style="background-image: url('https://via.placeholder.com/1680x1000');">
+            <h2>2D Art</h2>
+            <p>Here is the description of 2D art.</p>
+        </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <section class="section" id="three-d-art">
+        <div class="section-bg" style="background-image: url('https://via.placeholder.com/1680x1000');">
+            <h2>3D Art</h2>
+            <p>Here is the description of 3D art.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
