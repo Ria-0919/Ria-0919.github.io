@@ -56,6 +56,7 @@ body {
     justify-content: flex-start;
     padding: 10px;
     color: white;
+    box-sizing: border-box; /* 요소의 크기를 계산할 때 패딩과 보더를 포함 */
 }
 
 /* 헤딩 스타일 */
@@ -73,5 +74,20 @@ h2 {
 .profile-content img {
     border-radius: 50%;
     margin-right: 20px;
+    max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 설정 */
+    height: auto; /* 이미지 비율을 유지 */
 }
 
+/* 작은 화면용 여백 설정 */
+@media (max-width: 600px) {
+    .section {
+        margin-bottom: 8vh; /* 작은 화면에서는 여백을 더 크게 설정 */
+    }
+}
+
+/* 큰 화면용 여백 설정 */
+@media (min-width: 1200px) {
+    .section {
+        margin-bottom: 3vh; /* 큰 화면에서는 여백을 더 작게 설정 */
+    }
+}
