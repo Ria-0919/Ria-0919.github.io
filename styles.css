@@ -45,8 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20vh; /* 높이에 비례한 간격 */
-}
+    margin-bottom: 10px
 
 /* 섹션 배경 스타일 */
 .section-bg {
