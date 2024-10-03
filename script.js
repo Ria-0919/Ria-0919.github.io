@@ -19,3 +19,9 @@ navButtons.forEach(button => {
     }
   });
 });
+
+// 책 넘기기 애니메이션 토글 함수
+function toggleBook() {
+  const book = document.getElementById("book");
+  book.classList.toggle("open");
+}
