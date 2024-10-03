@@ -2,11 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    box-sizing: border-box; /* 모든 요소에 box-sizing 적용 */
+    box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; /* 모든 요소에 box-sizing 상속 */
+    box-sizing: inherit;
 }
 
 /* 스크롤 내비게이션 스타일 */
@@ -45,16 +45,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px;
-    margin-bottom: 5vh; /* 섹션 간의 비율에 따른 공간 */
+    margin-bottom: 5vh;
 }
 
 /* 섹션 배경 스타일 */
 .section-bg {
     width: 100%;
-    height: auto; /* 높이를 자동으로 설정 */
-    aspect-ratio: 16 / 9; /* 원하는 비율 설정 (예: 16:9 비율) */
-    background-size: cover !important;
+    height: 100vh; /* 화면 높이에 맞춤 */
+    background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -73,27 +71,27 @@ h2 {
 .profile-content {
     display: flex;
     align-items: center;
-    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+    width: 100%;
 }
 
 .profile-content img {
     border-radius: 50%;
     margin-right: 20px;
-    max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 설정 */
-    height: auto; /* 이미지 비율을 유지 */
-    object-fit: cover; /* 이미지가 부모 요소를 덮도록 설정 */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* 작은 화면용 여백 설정 */
 @media (max-width: 600px) {
     .section {
-        margin-bottom: 8vh; /* 작은 화면에서는 여백을 더 크게 설정 */
+        margin-bottom: 8vh;
     }
 }
 
 /* 큰 화면용 여백 설정 */
 @media (min-width: 1200px) {
     .section {
-        margin-bottom: 3vh; /* 큰 화면에서는 여백을 더 작게 설정 */
+        margin-bottom: 3vh;
     }
 }
