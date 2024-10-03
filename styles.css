@@ -52,7 +52,6 @@ body {
     aspect-ratio: 16 / 9; /* 원하는 비율 설정 (예: 16:9 비율) */
     background-size: cover !important;
     background-position: center;
-    background-attachment: fixed; /* 스크롤에 따라 이미지 고정 */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
