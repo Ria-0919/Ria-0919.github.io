@@ -42,6 +42,7 @@ body {
     justify-content: center;
     padding: 200px;
     margin-bottom: 5vh; /* 섹션 간의 비율에 따른 공간 */
+    box-sizing: border-box; /* 요소의 크기를 계산할 때 패딩과 보더를 포함 */
 }
 
 /* 섹션 배경 스타일 */
