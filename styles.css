@@ -46,6 +46,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
+    margin: 0px 0; /* 위쪽과 아래쪽에 20px의 여백 */
 
 /* 섹션 배경 스타일 */
 .section-bg {
