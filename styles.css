@@ -45,8 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10em;
-    margin: 5em 0; /* 위쪽과 아래쪽에 20px의 여백 */
+    margin-bottom: 5em;
     padding: 5em; /* 내부 여백 */
 }
 
