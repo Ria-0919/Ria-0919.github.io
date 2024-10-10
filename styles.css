@@ -46,8 +46,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10em;
-    margin: 0px 0; /* 위쪽과 아래쪽에 20px의 여백 */
-    padding: 20px; /* 내부 여백 */
+    margin: 5em 0; /* 위쪽과 아래쪽에 20px의 여백 */
+    padding: 5em; /* 내부 여백 */
 }
 
 /* 섹션 배경 스타일 */
@@ -58,7 +58,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 5em;
     color: white;
 }
 
