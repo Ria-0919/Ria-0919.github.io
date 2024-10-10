@@ -39,26 +39,6 @@ body {
     color: #007BFF;
 }
 
-/* 섹션 스타일 */
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5em;
-    padding: 5em; /* 내부 여백 */
-}
-
-/* 섹션 배경 스타일 */
-.section-bg {
-    width: 1680px;
-    height: 1000px; /* 높이는 이미지 비율에 맞춰 자동으로 조정 */
-    aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5em;
-    color: white;
-}
 
 /* 헤딩 스타일 */
 h2 {
