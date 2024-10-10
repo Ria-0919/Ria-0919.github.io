@@ -41,7 +41,6 @@ body {
 
 /* 섹션 스타일 */
 .section {
-    height: 100em;
     display: flex;
     align-items: center;
     justify-content: center;
