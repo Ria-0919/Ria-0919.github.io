@@ -41,13 +41,13 @@ body {
 
 /* 섹션 스타일 */
 .section {
-    height: 100vh;
+    height: 100em;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 10em;
     margin: 0px 0; /* 위쪽과 아래쪽에 20px의 여백 */
-    padding: 0px; /* 내부 여백 */
+    padding: 20px; /* 내부 여백 */
 }
 
 /* 섹션 배경 스타일 */
