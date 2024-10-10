@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 -->
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; color: #333;">
+<body>
 
     <div class="scroll-nav" id="scroll-nav">
         <button class="nav-btn" data-target="#home">Home</button>
@@ -15,27 +16,35 @@
         <button class="nav-btn" data-target="#three-d-art">3D Art</button>
     </div>
 
-    <section class="section" id="home" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background-image: url('https://via.placeholder.com/1680x1000'); background-size: cover; background-position: center;">
-        <h2 style="font-size: 3em; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Welcome!</h2>
+    <section class="section" id="home">
+        <h2>Welcome!</h2>
     </section>
 
-    <section class="section" id="profile" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background-image: url('https://github.com/user-attachments/assets/2f49689f-77b7-46ef-8baa-28be223b4e02'); background-size: cover; background-position: center;">
-        <div style="background-color: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 10px; text-align: center; max-width: 600px;">
-            <h2 style="font-size: 3em; color: #333; margin-bottom: 20px;">Profile</h2>
-            <p style="font-size: 1.2em;">Your profile details go here.</p>
+    <section class="section" id="profile">
+        <h2>Profile</h2>
+        <div id="book" onclick="toggleBook()">
+            <div id="cover" class="page">
+                <img src="https://github.com/user-attachments/assets/afd76c31-4438-4f1b-9429-7ca9983acb27" alt="책 표지">
+            </div>
+            <div id="leftPage" class="page">
+                <img src="https://github.com/user-attachments/assets/b9976d41-a209-491f-b477-8698c3e52378" alt="왼쪽 페이지">
+            </div>
+            <div id="rightPage" class="page">
+                <img src="https://github.com/user-attachments/assets/61a09abd-e4d9-4674-a59f-7df99f2dd525" alt="오른쪽 페이지">
+            </div>
         </div>
     </section>
 
-    <section class="section" id="game-design" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background-image: url('https://via.placeholder.com/1680x1000'); background-size: cover; background-position: center;">
-        <h2 style="font-size: 3em; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Game Design</h2>
+    <section class="section" id="game-design">
+        <h2>Game Design</h2>
     </section>
 
-    <section class="section" id="two-d-art" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background-image: url('https://via.placeholder.com/1680x1000'); background-size: cover; background-position: center;">
-        <h2 style="font-size: 3em; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">2D Art</h2>
+    <section class="section" id="two-d-art">
+        <h2>2D Art</h2>
     </section>
 
-    <section class="section" id="three-d-art" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background-image: url('https://via.placeholder.com/1680x1000'); background-size: cover; background-position: center;">
-        <h2 style="font-size: 3em; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">3D Art</h2>
+    <section class="section" id="three-d-art">
+        <h2>3D Art</h2>
     </section>
 
     <script src="script.js"></script>
